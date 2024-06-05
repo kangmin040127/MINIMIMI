@@ -51,6 +51,10 @@ body{
 /* aee CSS */
 
 .aee {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -75,6 +79,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
+    width: 100%;
     background-color: rgb(244, 200, 200);
 }
 
@@ -192,6 +197,8 @@ body{
 
 /* CSS */
 .button-82-pushable {
+  margin-bottom: 30px;
+  width: 40%;
   position: relative;
   border: none;
   background: transparent;
@@ -199,11 +206,13 @@ body{
   cursor: pointer;
   outline-offset: 4px;
   transition: filter 250ms;
+  
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   a{
     color: white;
+    font-size: 1em;
   }
 }
 
@@ -353,7 +362,8 @@ body{
 }
 
 .wrapper{
-  width: 300px;
+  width: 70%;
+  height: 75%;
   background-color: rgba(255, 255, 255, 0.585);
   border-radius: 15px;
   position:relative;
@@ -364,7 +374,8 @@ body{
 .button-73 {
   position: absolute;
   top: 210px;
-  left: 70px;
+  left: 50%;
+  transform: translate(-50%,0);
   appearance: none;
   background-color: #FFFFFF;
   border-radius: 40em;
@@ -390,7 +401,7 @@ body{
   touch-action: manipulation;
 }
 
-.button-73:hover {
+/* .button-73:hover {
   background-color: #f1f0ee;
   box-shadow: #d6d5d5 0 -6px 8px inset;
   transform: scale(1.05);
@@ -398,7 +409,7 @@ body{
 
 .button-73:active {
   transform: scale(1.025);
-}
+} */
 
 @media (min-width: 768px) {
   .button-73 {
@@ -435,9 +446,12 @@ body{
 }
 
 .quizBox-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   z-index: 1;
-  text-align: center;
   width: 85%;
   height: 85%;
   border-radius: 15px;
