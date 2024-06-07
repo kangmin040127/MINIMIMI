@@ -83,3 +83,56 @@ document.querySelector('.outBtn').addEventListener('click', ()=>{
     console.log('hi');
     document.querySelector('.gallery-container').style.display = "none";
 })
+
+
+
+
+
+// ---------------- dee SLide 효과 ---------------
+
+let backBtn = document.querySelector('.left-btn');
+let nextBtn = document.querySelector('.right-btn');
+let deeImgs = document.querySelectorAll('.dee-slideImg');
+let imgContainer = document.querySelector('.images');
+let dee = document.querySelector('.dee');
+let positionValue = 0;
+let pages = 0
+const ImgWidth = 350; 
+
+function backSlide(){
+    pages -= 1;
+    positionValue += ImgWidth;
+    if(pages === 0){
+        backBtn.style.display = "none";
+    }else{
+        nextBtn.style.display = "block";
+    }
+    // dee.style.background= "url(" + deeImgs[pages].src + ") no-repeat center";
+    // dee.style.backgroundSize= "cover";
+    imgContainer.style.transform = `translateX(${positionValue}px)`;
+    console.log(positionValue);
+    console.log(deeImgs[pages].src)
+}
+
+function nextSlide(){
+    pages += 1;
+    positionValue -= ImgWidth;
+    if(pages === deeImgs.length - 1){
+        nextBtn.style.display = "none";
+    }
+    backBtn.style.display = "block";
+    console.log(positionValue)
+    console.log(deeImgs[pages].src)
+    // dee.style.background= "url(" + deeImgs[pages].src + ") no-repeat center";
+    // dee.style.backgroundSize= "cover";
+    imgContainer.style.transform = `translateX(${positionValue}px)`;
+}
+
+function init(){
+    backBtn.style.display = "none";
+    // dee.style.background= "url(" + deeImgs[0].src + ") no-repeat center";
+    // dee.style.backgroundSize= "cover";
+    backBtn.addEventListener('click', backSlide);
+    nextBtn.addEventListener('click', nextSlide);
+}
+init();
