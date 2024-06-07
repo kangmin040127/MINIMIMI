@@ -10,15 +10,19 @@ body{
     z-index: 2;
     border-radius: 15px;
     text-align: center;
+    
     h1{
         font-size: 40px;
         color: rgb(47, 47, 47);  
         margin-bottom: 45px;
+        height: 15%;
     }
     i{
         color: red;
     }
-    p{
+   .gallery-ment{
+    height: 50%;
+    font-size: 20px;
         line-height: 2;
         margin: 0px 20px;
     }
@@ -26,11 +30,13 @@ body{
         color: rgb(66, 58, 58);
     }
     a{
+        margin-bottom: 20px;
         text-decoration: underline;
     }
     span{
         color: red;
     }
+    
 }
 .act{
     visibility: visible;
@@ -101,8 +107,8 @@ body{
   }
 .rotated_gradient_box {
     filter: hue-rotate(360deg);
-    width: 550px;
-    height: 450px;
+    width: 40%;
+    height: 55%;
     border-radius: 21px;
     border: 6px solid transparent;
     background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to left,#f3b3b3,#ecbbd3);

@@ -64,7 +64,7 @@ body{
     height: 100%;
     content: "";
     /* 2사분면 사진 */
-    background: url('aeePic.jpg') no-repeat center;
+    background: url('./beeSlidePic/aeePic.jpg') no-repeat center;
     /* aeePic.jpg */
     background-size: cover;
     position: absolute;
@@ -344,24 +344,31 @@ body{
 }
 
 .bee-title{
+  width: 65%;
+  height: 20%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   font-family: "Kanit", sans-serif;
   font-weight: 600;
   font-size: 21px;
   display: inline-block;
-  width: 260px;
   background-color: rgba(255, 255, 255, 0.685);
   color: rgb(78, 77, 77);
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bee-letter-Pic{
-  width: 200px;
-  margin-top: 13px;
-  transform: rotate(-8.5deg);
+  width: 55%;
+  transform: rotate(-9deg);
 }
 
 .wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   width: 70%;
   height: 75%;
   background-color: rgba(255, 255, 255, 0.585);
@@ -369,53 +376,25 @@ body{
   position:relative;
 }
 
-
+.cee-under-wrap{
+  width: 100%;
+  position: relative;
+}
 
 .button-73 {
-  position: absolute;
-  top: 210px;
-  left: 50%;
+  border: none;
+  width: 30%;
+  height: 20%;
+  position: absolute;  
+  bottom: 30px;
+  left: 51%;
   transform: translate(-50%,0);
-  appearance: none;
-  background-color: #FFFFFF;
-  border-radius: 40em;
-  border-style: none;
-  box-shadow: #b4b2b2 0 -12px 6px inset;
-  box-sizing: border-box;
-  color: #000000;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: -.24px;
-  margin: 0;
-  outline: none;
-  padding: 0.7rem 1.0rem;
-  quotes: auto;
-  text-align: center;
-  text-decoration: none;
-  transition: all .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  transition-duration: 0.3s;
 }
-
-/* .button-73:hover {
-  background-color: #f1f0ee;
-  box-shadow: #d6d5d5 0 -6px 8px inset;
-  transform: scale(1.05);
-}
-
-.button-73:active {
-  transform: scale(1.025);
-} */
-
-@media (min-width: 768px) {
-  .button-73 {
-    font-size: 1.5rem;
-    padding: .75rem 2rem;
-  }
+.button-73:hover{
+  background-color:#b51718;
+  border-radius: 15px;
+  color: white;
 }
 
 
@@ -424,8 +403,7 @@ body{
 .cee{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding:0 30px;
+  justify-content: space-around;
 }
 .ceeBox{
   display: flex;
@@ -434,7 +412,7 @@ body{
   position: relative;
   background-color: #e3e0e0;
   border-radius: 15px;
-  height: 95%;
+  height: 85%;
   width: 30%;
   transition : all ease 0.5s;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -458,6 +436,7 @@ body{
   background-color: rgba(233, 228, 228, 0.666);
 }
 .quizTitle{
+  padding: 15px 0;
   font-size: 1.4em;
   text-align: center;
   cursor: pointer;
@@ -479,6 +458,7 @@ body{
   border-radius: 15px;
 }
 .quizMent{
+  text-align: center;
   font-weight: bold;
   line-height: 1.5;
   color: rgb(47, 46, 46);
@@ -487,9 +467,10 @@ body{
   color: black;
   display: inline-block;
   margin-top: 10px;
-  padding: 5px 10px;
+  padding: 7px 20px;
   border-radius: 5px;
   transition-duration: 0.5s;
+  margin-top: 15px;
 }
 .quizLink:hover{
   background-color: #e2b8e2;
