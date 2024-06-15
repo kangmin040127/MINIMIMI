@@ -175,19 +175,7 @@ a{
 
 
 
-@media (max-width:960px){
-    .UL-nav{
-        display: none;
-    }
-    .UL-header{
-        height: 60px;
-    }
-    
-    .menu-btn{
-        display: block;    
-    }
 
-}
 
 
 
@@ -662,5 +650,29 @@ a{
   align-items: center;
   h1{
     font-size: 25px;
+  }
+}
+
+
+
+
+@media (max-width:1060px){
+  .UL-nav{
+      display: none;
+  }
+  .UL-header{
+      height: 60px;
+  }
+  
+  .menu-btn{
+      display: block;    
+  }
+  .dee-info{
+    display: none;
+  }
+}
+@media (max-width:1360px){
+  .dee-info{
+    display: none;
   }
 }
