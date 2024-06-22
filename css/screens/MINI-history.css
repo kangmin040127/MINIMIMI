@@ -3,5 +3,87 @@
 }
 
 #his-title{
+    padding-left: 15px;
     color: rgb(233, 231, 231);
+    text-align: center;
+    margin-top: 30px;
 }
+
+#display-arr-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+    margin: auto auto;
+    margin-top: 60px;
+}
+img{
+    border-radius: 7px;
+    border: 2px solid black;
+}
+
+.his-pics{
+    perspective: 500px;
+}
+.hisPic1 img{
+    width: 95%;
+    object-fit: cover;
+    transform: rotateY(25deg);
+}
+.hisPic2 img{
+    width: 103%;
+    object-fit: cover;
+    transform: rotateY(25deg); 
+}
+.hisPicCenter{
+    display: flex;
+    justify-content: center;
+    margin-left: -20px;
+}
+.hisPicCenter img{
+    width: 65%;
+    object-fit: cover;
+
+}
+
+.hisPic3 img{
+    margin-left: -30px;
+    width: 85%;
+    object-fit: cover;
+    transform: rotateY(-25deg);
+}
+.hisPic4{
+    margin-left: -70px;
+}
+.hisPic4 img{
+    width: 93%;
+    object-fit: cover;
+    margin-left: 20px;
+    transform: rotateY(-25deg);
+}
+
+
+/* .his-pics{
+    border: 1px solid red;
+
+    img{
+        object-fit: cover;
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+    }
+}
+
+.hisPic1,
+.hisPic4{
+    img{
+        width: 140%;
+    }
+}
+.hisPic2,
+.hisPic3{
+    img{
+        width: 80%;
+    }
+} */
