@@ -94,13 +94,9 @@ img{
     }
 } */
 
-
-*{
+#history-body{
     margin: 0;
     padding: 0;
-}
-
-#history-body{
     background-color: rgb(63, 62, 62);
     display: flex;
     justify-content: center;
