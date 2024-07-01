@@ -4,7 +4,7 @@ let target = document.querySelector('#date-text');
 
 // ----------------- 2사분면 aee 맨트 적기 ------------------- //
 function definiteArr(){
-    let stringArr = ["2023.12.01 ~ forever"];
+    let stringArr = ["2023.12.01 ~ forever  ♥️"];
     let randomArr = stringArr[Math.floor(Math.random()*stringArr.length)];
     let splitArr = randomArr.split("");
     return splitArr;
