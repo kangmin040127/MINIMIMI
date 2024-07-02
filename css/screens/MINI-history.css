@@ -25,7 +25,29 @@
     align-items: center;
     justify-content: center;
     h1{
-        margin-right: 15px;
+        color: rgb(198, 65, 238);
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        padding: 10px 15px;
+        padding-left: 25px;
+        padding-right: 15px;
+        background-color: rgba(255, 255, 255, 0.795);
+        font-family: "Anton SC", sans-serif;
+        letter-spacing: 1px;
+        border: 1px solid rgb(196, 61, 230);
+        border-right: none;
+    }
+    h2{
+        color: rgb(198, 65, 238);
+        padding: 15.7px 15px;
+        padding-right: 25px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.795);
+        font-family: "Anton SC", sans-serif;
+        border: 1px solid rgb(196, 61, 230);
+        border-left: none;
+        letter-spacing: 1px;
     }
 }
 img{
@@ -65,7 +87,7 @@ img{
     height: 100%;
     backface-visibility: hidden;
     transition-duration: 0.5s;
-    border: 1px solid rgb(235, 159, 238);
+    border: 5px solid rgb(235, 159, 238);
 }
 
 .picWrap1 > .picFront, 
@@ -103,6 +125,79 @@ img{
     background-color: rgb(238, 201, 240);
     transform: rotateY(180deg);
 }
+
+
+/* ====================== 박스1 css ====================== */
+.picBack{
+    overflow-y: scroll ;
+}
+.picBack h4{
+    text-align: center;
+}
+.picBack h3{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0;
+    padding: 15px;
+    background-color: white;
+}
+.picBack p{
+    margin: 0 5px;
+    /* text-align: center; */
+    line-height: 1.5;
+}
+.picDiscribe{
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: rgba(209, 46, 155, 0.548);
+    line-height: 3;
+    color: rgb(68, 68, 68);
+}
+
+
+
+/* ====================== 박스2 css ====================== */
+
+/* ====================== 박스3 css ====================== */
+
+/* ====================== 박스4 css ====================== */
+
+/* ====================== 박스5 css ====================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:1225px){
     .historyContainer{
