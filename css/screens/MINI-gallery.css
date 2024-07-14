@@ -1,0 +1,124 @@
+#galleryBody{
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+    background-color: rgb(228, 240, 229);
+}
+
+header{
+    margin-left: 25px;
+    h1{
+        color: rgb(1, 75, 1);
+        font-weight: 900;
+        font-family: "Playwrite GB S", cursive;
+    }
+}
+
+#menuWrap{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ============== 버튼 css ============= */
+.button-74 {
+    background-color: #c5eec1;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    margin: 0 10px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-74:hover {
+    background-color: #fff;
+  }
+  
+  .button-74:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button-74 {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }
+
+  @media (max-width: 1030px) {
+    #menuWrap{
+        margin-top: 40px;
+        display: inline;
+    }
+    .button-74{
+        margin: 10px 15px;
+    }
+  }
+
+
+  .dpWrap{
+    display: flex;
+    /* background-color: rgb(228, 167, 167); */
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+ .picBox{
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin: 10px 5px;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+ }
+ .galleryPics{ 
+    width: 250px;
+    height: 400px;
+    object-fit: fill;
+    border-radius: 0;
+
+}
+
+
+ .picFrame{
+    position: absolute;
+    width: 250px;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+ }
+ 
+ .FrameUp{
+    top: 0;
+    left: 0;
+ }
+ .picTrans{
+    width: 250px;
+    height: 300px;
+    background-color: rgb(247, 213, 213);
+    transition-duration: .8s;
+}
+.galleryPics:hover ~ .picTrans{
+    transform: translateY(-200px);
+}
