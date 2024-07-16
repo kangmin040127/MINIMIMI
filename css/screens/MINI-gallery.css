@@ -68,10 +68,10 @@ header{
   }
 
 
-  .dpWrap{
+  #dpWrap{
     display: flex;
     /* background-color: rgb(228, 167, 167); */
-    margin: 0 auto;
+    margin: 0 80px;
     margin-top: 40px;
     padding: 10px;
     justify-content: center;
@@ -81,17 +81,19 @@ header{
 
  .picBox{
     position: relative;
-    width: 250px;
-    height: 400px;
+    border: 1px solid black;
+    width: 330px;
+    height: 430px;
     margin: 10px 5px;
     overflow: hidden;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    margin-bottom: 30px;
 
  }
  .galleryPics{ 
-    width: 250px;
-    height: 400px;
+    width: 330px;
+    height: 430px;
     object-fit: fill;
     border-radius: 0;
 
@@ -100,8 +102,8 @@ header{
 
  .picFrame{
     position: absolute;
-    width: 250px;
-    background-color: white;
+    width: 330px;
+    background-color: rgb(67, 122, 74);
     height: 50px;
     display: flex;
     align-items: center;
@@ -114,10 +116,10 @@ header{
     left: 0;
  }
  .picTrans{
-    width: 250px;
-    height: 300px;
-    background-color: rgb(247, 213, 213);
-    transition-duration: .8s;
+    width: 330px;
+    height: 430px;
+    background-color: rgb(67, 122, 74);
+    transition-duration: .6s;
 }
 .galleryPics:hover ~ .picTrans{
     transform: translateY(-200px);
