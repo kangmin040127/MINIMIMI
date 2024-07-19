@@ -11,21 +11,18 @@
         <h1>MINI GALLERY</h1>
     </header>
     <div id="menuWrap">
-        <button class="button-74" id="daily" role="button"> 일상 </button>
-        <button class="button-74" id="date" role="button"> 데이트 </button>
-        <button class="button-74" id="homeFood" role="button"> 집밥 </button>
-        <button class="button-74" id="redic" role="button"> 인간미 </button>
-        <button class="button-74" id="sefie" role="button"> 셀카  </button>
-        <button class="button-74" id="best" role="button"> 인생샷 </button>
-        <!-- <button class="button-74" role="button">Button 74</button>
-        <button class="button-74" role="button">Button 74</button> -->
+        <button class="button-74" id="all" role="button" onclick="ALLPics()"> ALL </button>
+        <button class="button-74" id="daily" role="button" onclick="dailyPics()"> 일상 </button>
+        <button class="button-74" id="date" role="button" onclick="datePics()" > 데이트 </button>
+        <button class="button-74" id="Food" role="button" onclick="FoodPics()"> 진수성찬 </button>
+        <button class="button-74" id="selfie" role="button" onclick="selfiePics()"> 셀카  </button>
+        <button class="button-74" id="best" role="button" onclick="bestPics()"> 인생샷 </button>
+        <button class="button-74" id="special" role="button" onclick="spcialPics()">소중한 사진들</button>
     </div>
     <div id="dpWrap">
-        <!-- <div class="picBox">
-            <div class="picFrame FrameUp"></div>
-            <img class="galleryPics" src="img/gallery-imsi-Pic.jpg" alt="">
-            <div class="picTrans">!!사진 설명!!</div>
-        </div> -->
+    </div>
+    <div id="gallery-enter">
+        Welcome to MINI GALLERY
     </div>
     <script src="js/MINI-gallery.js"></script>
 </body>
