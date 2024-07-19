@@ -101,14 +101,20 @@ header{
 
 
  .picFrame{
+
     position: absolute;
     width: 330px;
-    background-color: rgb(67, 122, 74);
+    background-color: rgba(45, 82, 50, 0.842);
     height: 50px;
     display: flex;
     align-items: center;
     padding-left: 10px;
-
+    color: rgb(228, 238, 214);
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
  
  .FrameUp{
@@ -118,9 +124,45 @@ header{
  .picTrans{
     width: 330px;
     height: 430px;
-    background-color: rgb(67, 122, 74);
+    background-color: rgba(67, 122, 74, 0.692);
     transition-duration: .6s;
 }
 .galleryPics:hover ~ .picTrans{
-    transform: translateY(-200px);
+   
+    transform: translateY(-250px);
+}
+
+
+#gallery-enter{
+  position: absolute;
+  top: -21px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(178, 238, 178);
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playwrite GB S", cursive;
+  font-size: 60px;
+  color: green;
+  animation: loading;
+  /* transition: all 0.8s; */
+
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+@keyframes loading{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(400px);
+  }
+  100%{
+    transform: translateX(-2500px);
+    display: none;
+  }
 }
