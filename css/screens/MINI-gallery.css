@@ -159,7 +159,7 @@ header{
     transform: translateX(0);
   }
   50%{
-    transform: translateX(400px);
+    transform: translateX(200px);
   }
   100%{
     transform: translateX(-2500px);
