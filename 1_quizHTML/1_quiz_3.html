@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="quiz-body">
+    <div class="quizWrap">
+        <header id="quiz-header">
+            <h1 id="quiz-label">
+                MINI-QUIZ
+            </h1>
+            <ul id="numberList">
+                <li  class="quizNumber"><a href="../1_quiz.html">1</a></li>
+                <li id="prePage" class="quizNumber"><a   href="1_quiz_2.html">2</a></li>
+                <li id="nowPage" class="quizNumber"><a   href="1_quiz_3.html">3</a></li>
+                <li  class="quizNumber"><a id="nextPage" href="1_quiz_4.html">4</a></li>
+                <li  class="quizNumber"><a  href="1_quiz_5.html">5</a></li>
+            </ul>
+        </header>
+        <main class="quiz-mainWrap">
+            <div id="photoWrap">
+                <h3 class="question"> 3) 7/25일 기준 강민이의 몸무게는?</h3>
+                <img class="quiz-img" src="../img/quiz1_3weight.jpg" alt="">
+            </div>
+            <div class="questionWrap">
+                <div class="questionListWrap">
+                    <div class="container">
+                        <form>
+                            <label class="line-wrap">
+                                <input type="radio" name="quizRadio" value="false" onclick="quizAnswer(event)">
+                                <span>82KG</span>
+                            </label>
+                            <label class="line-wrap">
+                                <input type="radio" name="quizRadio" value="false" onclick="quizAnswer(event)">
+                                <span >72KG</span>
+                            </label>
+                            <label class="line-wrap">
+                                <input type="radio" name="quizRadio" value="true" onclick="quizAnswer(event)">
+                                <span id="quizAnswer">75KG</span>
+                            </label>
+                            <label class="line-wrap">
+                                <input type="radio" name="quizRadio" value="false" onclick="quizAnswer(event)">
+                                <span>79KG</span>
+                            </label>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+            <div id="correctPage">
+                <img class="correctIMG" src="../img/correctImg.png" alt="">
+                <div class="correctMent">✔️ 정답이지롱 ✔️</div>
+            </div>
+            <div id="wrongPage">
+                <img class="wrongIMG" src="../img/wrongIMG.png" alt="">
+                <div class="wrongMent">❌ 오답이지롱 ❌</div>
+            </div> 
+        </main>
+        <footer class="quiz-footerWrap">
+            <div class="hint-wrap">
+                💡 힌트 💡 : 김강민은 은근 체중이 많이 안 나간다.
+            </div>
+            
+    </div>
+
+
+
+
+    <script src="../js/1_quiz.js"></script>
+</body>
+</html>
