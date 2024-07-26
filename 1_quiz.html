@@ -9,28 +9,61 @@
 <body class="quiz-body">
     <div class="quizWrap">
         <header id="quiz-header">
-            <h1 id="quiz-label">
+            <h1 id="quiz-label"> 
                 MINI-QUIZ
             </h1>
             <ul id="numberList">
-                <li class="quizNumber"><a href="1_quiz_1.html">1</a></li>
-                <li class="quizNumber"><a href="1_quiz_2.html">2</a></li>
-                <li class="quizNumber"><a href="1_quiz_3.html">3</a></li>
-                <li class="quizNumber"><a href="1_quiz_4.html">4</a></li>
-                <li class="quizNumber"><a href="1_quiz_5.html">5</a></li>
+                <li id="nowPage" class="quizNumber"><a  href="1_quiz.html">1</a></li>
+                <li class="quizNumber"><a id="nextPage" href="1_quizHTML/1_quiz_2.html">2</a></li>
+                <li class="quizNumber"><a href="1_quizHTML/1_quiz_3.html">3</a></li>
+                <li class="quizNumber"><a href="1_quizHTML/1_quiz_4.html">4</a></li>
+                <li class="quizNumber"><a href="1_quizHTML/1_quiz_5.html">5</a></li>
             </ul>
         </header>
         <main class="quiz-mainWrap">
-            <div id="photoWrap">1</div>
-            <div class="questionWrap">2</div>
+            <div id="photoWrap">
+                <h3 class="question"> 1) 김강민을 한자로 쓰면?</h3>
+                <img class="quiz-img" src="img/quiz1_1Hanza.png" alt="">
+            </div>
+            <div class="questionWrap">
+                <div class="questionListWrap">
+                    <div class="container">
+                        <form>
+                            <label class="line-wrap">
+                                <input type="radio" name="quizRadio" value="false" onclick="quizAnswer(event)">
+                                <span>김강민은 "金抗敏"이다.</span>
+                            </label>
+                            <label class="line-wrap">
+                                <input type="radio" name="quizRadio" value="true" onclick="quizAnswer(event)">
+                                <span id="quizAnswer">김강민은 "金康民"이다.</span>
+                            </label>
+                            <label class="line-wrap">
+                                <input type="radio" name="quizRadio" value="false" onclick="quizAnswer(event)">
+                                <span>김강민은 "金亢民"이다.</span>
+                            </label>
+                            <label class="line-wrap">
+                                <input type="radio" name="quizRadio" value="false" onclick="quizAnswer(event)">
+                                <span>김강민은 "金亢敏"이다.</span>
+                            </label>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+            <div id="correctPage">
+                <img class="correctIMG" src="img/correctImg.png" alt="">
+                <div class="correctMent">✔️ 정답이지롱 ✔️</div>
+            </div>
+            <div id="wrongPage">
+                <img class="wrongIMG" src="img/wrongIMG.png" alt="">
+                <div class="wrongMent">❌ 오답이지롱 ❌</div>
+            </div> 
         </main>
         <footer class="quiz-footerWrap">
-            3
-        </footer>
+            <div class="hint-wrap">
+                💡 힌트 💡 : 김강민은 건강한 백성이다
+            </div>
+            
     </div>
- 
-
-
 
     <script src="js/1_quiz.js"></script>
 </body>
