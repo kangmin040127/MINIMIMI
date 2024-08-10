@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/screens/2_quiz.css">
+</head>
+<body class="quiz-body">
+    <!-- HTML !-->
+    <button id="outBtn" class="button-45" role="button"><a href="index.html">나가기</a></button>
+    <div class="quizWrap">
+        <div id="score">
+            <div id="trueWrap">정답: <span id="trueScore"></span></div>
+            <div id="falseWrap">오답: <span id="falseScore"></span></div>
+        </div>
+        <header id="quiz-header">
+            <h1 id="quiz-label"> 
+                MINI-QUIZ
+            </h1>
+            <ul id="numberList">
+                <li class="quizNumber" onclick="quizNumber('1')">1</li>
+                <li class="quizNumber" onclick="quizNumber('2')">2</li>
+                <li class="quizNumber" onclick="quizNumber('3')">3</li>
+                <li class="quizNumber" onclick="quizNumber('4')">4</li>
+                <li class="quizNumber" onclick="quizNumber('5')">5</li>
+            </ul>
+        </header>
+        <main class="quiz-mainWrap">
+            <div id="photoWrap">
+                <!-- <h3 id="quizTitle" class="question"></h3>
+                <img id="quizIMG" class="quiz-img" src="img/quiz1_1Hanza.png" alt=""> -->
+            </div>
+            <div id="questionUI" class="questionWrap">
+                 
+            </div>
+            <div id="correctPage">
+                <img class="correctIMG" src="img/correctImg.png" alt="">
+                <div class="correctMent">✔️ 정답이지롱 ✔️</div>
+            </div>
+            <div id="wrongPage">
+                <img class="wrongIMG" src="img/wrongIMG.png" alt="">
+                <div class="wrongMent">❌ 오답이지롱 ❌</div>
+            </div> 
+        </main>
+        <footer id="quizHint" class="quiz-footerWrap">
+
+        </footer>    
+        <div id="scoreInfo">
+            <h1 id="scoreTitle">💯 점수판 💯</h1>
+            <div class="correctAndWrongInfo">
+                <div>정답: <span id="correctNum"></span></div>
+                <div>오답: <span id="wrongNum"></span></div>
+            </div>
+            <div id="lastMent">🤓 역시 똑똑이 서미래 🤓</div>
+        </div>
+        <div id="scoreInfo2">
+            <h1 id="scoreTitle2">💯 점수판 💯</h1>
+            <div class="correctAndWrongInfo">
+                <div>정답: <span id="correctNum2"></span></div>
+                <div>오답: <span id="wrongNum2"></span></div>
+            </div>
+            <div id="lastMent2">흠냐링 그래도 괜찮네 Not Bad</div>
+        </div>
+        <div id="scoreInfo3">
+            <h1 id="scoreTitle3">💯 점수판 💯</h1>
+            <div class="correctAndWrongInfo">
+                <div>정답: <span id="correctNum3"></span></div>
+                <div>오답: <span id="wrongNum3"></span></div>
+            </div>
+            <div id="lastMent3"> 😮‍💨 나를 이것밖에 모르다니.. 서미래.. 😮‍💨</div>
+        </div>
+    </div>
+
+    <script src="js/3_quiz.js"></script>
+</body>
+</html>
