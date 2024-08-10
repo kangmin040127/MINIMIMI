@@ -10,7 +10,8 @@ li{
     justify-content: center;
     align-items: center;
 
-    background: url('');
+    background: url('../../img/quiz2_backgroundIMG.png') no-repeat center;
+    background-size: cover;
 }
 .quizWrap{
     width: 900px;
